@@ -32,7 +32,7 @@ rangeinput.forEach(function(input){
 //Start type case
 let getshowcase = document.querySelectorAll('.showcases');
 let getbag = document.getElementsByClassName('bags');
-console.log(getbag)
+// console.log(getbag)
 for(var i = 0 ; i < getshowcase.length ; i++){
     getshowcase[i].addEventListener('click',function(){
        if(this.innerHTML === "Show All"){
@@ -79,7 +79,59 @@ function resizefix(){
     }
 }
 
-//End filter-btn show/hide
+//End filter-btn show/hide 
+
+let getsorttitle = document.querySelector('.sort-titles');
+let getsortprice = document.querySelector('.sort-prices');
+let getsalecase = document.querySelector('.sale-cases');
+let getcasebox = getsalecase.getElementsByClassName('case-boxs');
+let getclearsort = document.querySelector('.clear-sort');
+
+getsorttitle.addEventListener('click',function(){
+    
+    var shouldswitch = true;
+    var switching = true;
+
+    do{
+        switching = false;
+        var i = 0;
+        for(i ; i < getcasebox.length-1 ; i++){
+            shouldswitch = false;
+            if(getcasebox[i].innerHTML > getcasebox[i+1].innerHTML){
+                shouldswitch = true;
+                break;
+            }
+        }
+
+        if(shouldswitch){
+            switching = true;
+            getcasebox[i].parentElement.insertBefore(getcasebox[i+1],getcasebox[i]);
+        }
+    }while(switching);
+
+});
+
+getsortprice.addEventListener('click',function(){
+    var shouldswitch = true;
+    var switching = true;
+
+    do{
+        switching = false;
+        var i = 0;
+        for(i ; i < getcasebox.length-1 ; i++){
+            shouldswitch = false;
+            if(getcasebox[i].querySelector('ul li:nth-of-type(2) span:last-child').innerHTML > getcasebox[i+1].querySelector('ul li:nth-of-type(2) span:last-child').innerHTML){
+                shouldswitch = true;
+                break;
+            }
+        }
+
+        if(shouldswitch){
+            switching = true;
+            getcasebox[i].parentElement.insertBefore(getcasebox[i+1],getcasebox[i]);
+        }
+    }while(switching);
+});
 
 
 //End Javascript Area 

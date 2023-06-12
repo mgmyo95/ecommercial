@@ -19,11 +19,17 @@ html{
 }
 
 ::-webkit-scrollbar{
-    background:var(--btn1);
+    width:7px;
+    background:none;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color:crimson;
+    border-radius:3px;
 }
 
 body{
-    background-color:var(--bg-color);
+    /* background-color:var(--bg-color); */
 }
 
 /* Start Phone Case Section  */
@@ -204,6 +210,9 @@ body{
 }
 
 .case-boxs .imgboxs img{
+    width:80%;
+    height:200px;
+    object-fit:scale-down;
     transition:all 0.2s ease-in;
 }
 
@@ -232,7 +241,7 @@ body{
 
 @media only screen and (width < 991px){
     .sale-cases{     
-        grid-template-columns:200px 200px;
+        grid-template-columns: 200px 200px ;
     }
 
     .case-boxs{

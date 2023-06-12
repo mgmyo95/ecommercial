@@ -1,0 +1,24 @@
+
+#Compiled Sources#
+################# 
+*.com 
+*.class 
+*.dll
+*.exx 
+*.xlsx 
+
+#Packages # 
+*.zip 
+*.rar 
+*.tar 
+*.7zip 
+*.dmg 
+*.iso 
+
+#Images Sources# 
+*jpg
+*.jpeg 
+*.png 
+*.ico 
+*.mp4
+*.mp3 
