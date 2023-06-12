@@ -197,12 +197,24 @@
         <!--Start iphone case-->
         <div class="iphone-case">
 
-            <div class="w-full bg-slate-300 px-3 py-3">
-                <ul class="flex text-lg font-semibold space-x-3">
+            <div class="w-full bg-slate-300 flex items-center px-3 py-3">
+                <ul class="flex text-md md:text-lg font-semibold space-x-3">
                     <li class="text-stone-600"><a href="index.html">Home</a></li>
                     <li>/</li>
                     <li class="text-stone-500">iphone Cases</li>
                 </ul>
+
+                <form action="" method="" class="w-1/2 relative ml-3">
+                    <div class="form-group">
+                        <input type="text" name="case-search" id="case-search" class="w-full border-none outline-none rounded-tl-[5px] rounded-tr-[5px] px-3 pe-10 py-2" placeholder="Search Cases..." />
+
+                        <button type="submit" class="absolute top-3 right-2"><i class="fas fa-search"></i></button>
+
+                        <ul class="w-full absolute bg-slate-200 z-10 overflow-y-auto  search-cases">
+
+                        </ul>
+                    </div>
+                </form>
             </div>
 
             <div class="my-8 titles">
@@ -225,7 +237,7 @@
                     <div class="overflow-hidden">
                         <div class="relative imgboxs">
                             <img src="./assets/img/case1.png" class="object-cover" alt="case1" />
-                            <button class="text-xs bg-blue-300 rounded-md absolute top-7 left-3 px-2 py-1.5"><i class="fas fa-heart me-0.5"></i>Sale</button>
+                            <button class="text-xs bg-blue-300 rounded-md absolute top-7 left-0 px-2 py-1.5"><i class="fas fa-heart me-0.5"></i>Sale</button>
                         </div>
     
                         <ul class="text-center space-y-8">
@@ -248,9 +260,9 @@
                         <div class="relative imgboxs">
                             <img src="./assets/img/case2.png" class="object-cover" alt="case2" />
     
-                            <button class="text-xs bg-yellow-400 rounded-md absolute top-7 left-3 px-2 py-1.5"><i class="fas fa-fire me-0.5"></i>Hot!</button>
+                            <button class="text-xs bg-yellow-400 rounded-md absolute top-7 left-0 px-2 py-1.5"><i class="fas fa-fire me-0.5"></i>Hot!</button>
     
-                            <button class="text-xs bg-blue-300 rounded-md absolute top-16 left-3 px-2 py-1.5"><i class="fas fa-heart me-0.5"></i>Sale</button>
+                            <button class="text-xs bg-blue-300 rounded-md absolute top-16 left-0 px-2 py-1.5"><i class="fas fa-heart me-0.5"></i>Sale</button>
                             
                         </div>
     
@@ -275,9 +287,9 @@
                     <div class="overflow-hidden">
                         <div class="relative imgboxs">
                             <img src="./assets/img/case3.png" class="object-cover" alt="case3" />
-                            <button class="text-xs bg-yellow-400 rounded-md absolute top-7 left-3 px-2 py-1.5"><i class="fas fa-fire me-0.5"></i>Hot!</button>
+                            <button class="text-xs bg-yellow-400 rounded-md absolute top-7 left-0 px-2 py-1.5"><i class="fas fa-fire me-0.5"></i>Hot!</button>
     
-                            <button class="text-xs text-white bg-red-600 rounded-md absolute top-16 left-3 px-2 py-1.5"><i class="fas fa-flag me-0.5"></i>New!</button>
+                            <button class="text-xs text-white bg-red-600 rounded-md absolute top-16 left-0 px-2 py-1.5"><i class="fas fa-flag me-0.5"></i>New!</button>
                         </div>
     
                         <ul class="text-center space-y-8">
@@ -299,7 +311,7 @@
                     <div class="overflow-hidden">
                         <div class="relative imgboxs">
                             <img src="./assets/img/case4.png" class="object-cover" alt="case4" />
-                            <button class="text-xs text-white bg-green-800 rounded-md absolute top-7 left-3 px-2 py-1.5"><i class="fas fa-heart me-0.5"></i>Best Choice</button>
+                            <button class="text-xs text-white bg-green-800 rounded-md absolute top-7 left-0 px-2 py-1.5"><i class="fas fa-heart me-0.5"></i>Best Choice</button>
                         </div>
     
                         <ul class="text-center">
@@ -321,7 +333,7 @@
                     <div class="overflow-hidden">
                         <div class="relative imgboxs">
                             <img src="./assets/img/case5.png" class="object-cover" alt="case5" />
-                            <button class="text-xs text-white bg-red-600 rounded-md absolute top-7 left-3 px-2 py-1.5"><i class="fas fa-heart me-0.5"></i>New !</button>
+                            <button class="text-xs text-white bg-red-600 rounded-md absolute top-7 left-0 px-2 py-1.5"><i class="fas fa-heart me-0.5"></i>New !</button>
                         </div>
     
                         <ul class="text-center space-y-8">
@@ -366,9 +378,9 @@
                     <div class="overflow-hidden">
                         <div class="relative imgboxs">
                             <img src="./assets/img/case7.png" class="object-cover" alt="case7" />
-                            <button class="text-xs bg-sky-400 rounded-md absolute top-7 left-3 px-2 py-1.5"><i class="fas fa-heart me-0.5"></i>Sale</button>
+                            <button class="text-xs bg-sky-400 rounded-md absolute top-7 left-0 px-2 py-1.5"><i class="fas fa-heart me-0.5"></i>Sale</button>
     
-                            <button class="text-xs bg-yellow-500 rounded-md absolute top-16 left-3 px-2 py-1.5"><i class="fas fa-fire me-0.5"></i>Hot!</button>
+                            <button class="text-xs bg-yellow-500 rounded-md absolute top-16 left-0 px-2 py-1.5"><i class="fas fa-fire me-0.5"></i>Hot!</button>
                         </div>
     
                         <ul class="text-center space-y-8">
@@ -390,7 +402,7 @@
                     <div class="overflow-hidden">
                         <div class="relative imgboxs">
                             <img src="./assets/img/case8.png" class="object-cover" alt="case8" />
-                            <button class="text-xs text-white bg-green-800 rounded-md absolute top-7 left-3 px-2 py-1.5"><i class="fas fa-heart me-0.5"></i>Best Choice</button>
+                            <button class="text-xs text-white bg-green-800 rounded-md absolute top-7 left-0 px-2 py-1.5"><i class="fas fa-heart me-0.5"></i>Best Choice</button>
                         </div>
     
                         <ul class="text-center">
@@ -412,7 +424,7 @@
                     <div class="overflow-hidden">
                         <div class="relative imgboxs">
                             <img src="./assets/img/case9.png" class="object-cover" alt="case9" />
-                            <button class="text-xs bg-yellow-500 rounded-md absolute top-7 left-3 px-2 py-1.5"><i class="fas fa-fire me-0.5"></i>Hot !</button>
+                            <button class="text-xs bg-yellow-500 rounded-md absolute top-7 left-0 px-2 py-1.5"><i class="fas fa-fire me-0.5"></i>Hot !</button>
                         </div>
     
                         <ul class="text-center">
@@ -458,7 +470,7 @@
                         <div class="relative imgboxs">
                             <img src="./assets/img/case11.png" class="object-cover" alt="case11" />
         
-                            <button class="text-xs bg-yellow-500 rounded-md absolute top-7 left-3 px-2 py-1.5"><i class="fas fa-fire me-0.5"></i>Hot!</button>
+                            <button class="text-xs bg-yellow-500 rounded-md absolute top-7 left-0 px-2 py-1.5"><i class="fas fa-fire me-0.5"></i>Hot!</button>
                         </div>
     
                         <ul class="text-center space-y-8">
@@ -480,8 +492,8 @@
                     <div class="overflow-hidden">
                         <div class="relative imgboxs">
                             <img src="./assets/img/case12.png" class="object-cover" alt="case12" />
-                            <button class="text-xs bg-yellow-500 rounded-md absolute top-7 left-3 px-2 py-1.5"><i class="fas fa-fire me-0.5"></i>Hot</button>
-                            <button class="text-xs bg-sky-500 rounded-md absolute top-16 left-3 px-2 py-1.5"><i class="fas fa-heart me-0.5"></i>Sale</button>
+                            <button class="text-xs bg-yellow-500 rounded-md absolute top-7 left-0 px-2 py-1.5"><i class="fas fa-fire me-0.5"></i>Hot</button>
+                            <button class="text-xs bg-sky-500 rounded-md absolute top-16 left-0 px-2 py-1.5"><i class="fas fa-heart me-0.5"></i>Sale</button>
                         </div>
     
                         <ul class="text-center">

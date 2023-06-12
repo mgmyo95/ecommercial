@@ -188,6 +188,20 @@ body{
 /* @medai filter */
 
 /* Start case item  */
+.list-items{
+    padding:10px;
+}
+
+.list-items:hover{
+    background-color:rgb(241, 227, 209);
+}
+
+.hovered{
+    background-color:rgb(241, 227, 209);
+}
+
+
+
 .titles > h1::before{
     content:'';
     width:8%;

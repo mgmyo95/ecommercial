@@ -79,6 +79,47 @@ function resizefix(){
     }
 }
 
+//Start search case
+let names = ["Case Notebook","Case Fuck","Case Brownie","Case Explorer wanted","Case Pink with girl","Case Blone with a glass","Girl with a cake","Case strength above all","Case cakes and girl","Case Red","Case lovely gir","Case Santa matrysohka","Ellen","Camille","Emily","Nadia","Mitchell","Harvey","Lucy","Amy","Glen","Peter"];
+let sortnames = names.sort();
+console.log(sortnames); 
+let getsearchinput = document.querySelector('#case-search');
+var height = "250px";
+
+getsearchinput.addEventListener('keyup',function(e){
+    // console.log(e.target)
+    removeelement();
+    for(var i of sortnames){
+        if(i.toLowerCase().startsWith(getsearchinput.value.toLowerCase())&& getsearchinput.value !== ""){
+            let newli = document.createElement('li');
+            newli.classList.add('list-items');
+            newli.style.cursor = "pointer";
+            newli.setAttribute('onclick','displayname("'+i+'")');
+            let word = "<b>"+i.substr(0,getsearchinput.value.length)+"</b>";
+            word += i.substr(getsearchinput.value.length);
+            newli.innerHTML = word;
+            document.querySelector('.search-cases').appendChild(newli);
+        
+        }
+    }
+});
+
+function displayname(value){
+    getsearchinput.value = value;
+    removeelement();
+}   
+
+function removeelement(){
+    let items = document.querySelectorAll('.list-items');
+    items.forEach(item=>{
+        item.remove();
+    })
+}
+
+
+
+//End search case
+
 //End filter-btn show/hide 
 
 let getsorttitle = document.querySelector('.sort-titles');
@@ -86,6 +127,10 @@ let getsortprice = document.querySelector('.sort-prices');
 let getsalecase = document.querySelector('.sale-cases');
 let getcasebox = getsalecase.getElementsByClassName('case-boxs');
 let getclearsort = document.querySelector('.clear-sort');
+
+getclearsort.addEventListener('click',()=>{
+    window.location.href = window.location.href;
+})
 
 getsorttitle.addEventListener('click',function(){
     
