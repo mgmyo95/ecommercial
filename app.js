@@ -80,7 +80,7 @@ function resizefix(){
 }
 
 //Start search case
-let names = ["Case Notebook","Case Fuck","Case Brownie","Case Explorer wanted","Case Pink with girl","Case Blone with a glass","Girl with a cake","Case strength above all","Case cakes and girl","Case Red","Case lovely gir","Case Santa matrysohka","Ellen","Camille","Emily","Nadia","Mitchell","Harvey","Lucy","Amy","Glen","Peter"];
+let names = ["Case Notebook","Case Fuck","Case Brownie","Case Explorer wanted","Case Pink with girl","Case Blone with a glass","Girl with a cake","Case strength above all","Case cakes and girl","Case Red","Case lovely gir","Case Santa matrysohka","Samsung S8","Samsung S10","Samsung Note20","Huawai Nova9","Huavwai Mate40","Huawai Mate40 Pro","Huawai P10","Xiomi 11","Xiomi 11Pro","Xiomi 12"];
 let sortnames = names.sort();
 console.log(sortnames); 
 let getsearchinput = document.querySelector('#case-search');
